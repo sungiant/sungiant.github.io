@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html id='homepage' lang='en'>
+<head>
+  <title data-bind='text: vm_title'></title>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='description' data-bind='attr: { content: vm_description }'>
+  <meta name='author' data-bind='attr: { content: vm_author }'>
+  <link rel='stylesheet' type='text/css' href='/contrib/css/raleway.css'>                                               <!-- Generated Raleway font. -->
+  <link rel='stylesheet' type='text/css' href='/contrib/css/normalize-8.0.1.css'>                                       <!-- Makes browsers render all elements more consistently and in line with modern standards. -->
+  <link rel='stylesheet' type='text/css' href='/contrib/css/skeleton-2.0.4.css'>                                        <!-- A dead simple, responsive boilerplate. -->
+  <link rel='stylesheet' type='text/css' href='/contrib/css/foundation-icons-3.0.css'>                                  <!-- An icon font set. -->
+  <link rel='stylesheet' type='text/css' href='/contrib/css/flickity-2.2.1.css'>                                        <!-- Carousel component library. -->
+  <link rel='stylesheet' type='text/css' href='/homepage.css'>
+</head>
+<body>
+  <div style='display: none' data-bind='ifnot: vm_is_loading, visible: true'>
+
+    <!-- HEADER -->
+    <section class='header'>
+      <div class='line'></div>
+      <div class='container clickable' data-bind='click: function () { window.location.hash = ""; }'>
+        <h1 class='title'>
+          <span data-bind='text: vm_data().title'></span>
+          <i id='homepage_icon' class='clickable fi-home u-pull-right'></i>
+        </h1>
+      </div>
+
+      <div class='banner' data-bind="style: { 'backgroundImage': 'url(/res/' + vm_banner() + '/banner.jpg)' }"></div>
+    </section>
+
+
+    <!-- LANDING PAGE -->
+    <div data-bind='ifnot: vm_current_page()'>
+
+      <!-- DEMOS -->
+      <section class='demos'>
+        <div class='container'>
+          <h2 class='heading'><i data-bind='attr : { class : vm_data().heading_icons["demos"] }'>&nbsp;&nbsp;</i><span data-bind='text:  vm_data().heading_titles["demos"]'></span></h2>
+          <div data-bind='foreach: vm_data().demos'>
+            <div class='clickable' data-bind='click: function () { if ($root.vm_data().micro_mode) { location.href = "https://github.com/" + $data.link; } else { window.location.hash = "#!/" + $data.key; } }'>
+              <div class='row'>
+                <div class='three columns'>
+                  <img class='u-full-width' data-bind='attr: { src: "/res/" + $data.key + "/thumbnail.jpg" }'>
+                </div>
+                <div class='nine columns'>
+                  <h4 class='compact' data-bind='text: $data.title'></h4>
+                  <p data-bind='text: $data.subtitle'></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class='projects'>
+        <div class='container'>
+          <h2 class='heading'><i data-bind='attr : { class : vm_data().heading_icons["projects"] }'>&nbsp;&nbsp;</i><span data-bind='text:  vm_data().heading_titles["projects"]'></span></h2>
+
+          <div class='row'>
+            <div class='six columns' id='project_columns'>
+              <ul data-bind='foreach: vm_data().projects'>
+                <li class='clickable' data-bind='visible: $index() % 2 == 0, click: function () { location.href = $data.link; }'>
+                  <img data-bind='attr: { src: "/res/proj/icon_" + $data.key + ".png" }'>
+                  <h4 class='compact' data-bind='text: $data.name'></h4>
+                  <p data-bind='text: $data.description'></p>
+                </li>
+              </ul>
+            </div>
+            <div class='six columns' id='project_columns'>
+              <ul data-bind='foreach: vm_data().projects'>
+                <li class='clickable' data-bind='visible: $index() % 2 == 1, click: function () { location.href = $data.link; }'>
+                  <img data-bind='attr: { src: "/res/proj/icon_" + $data.key + ".png" }'>
+                  <h4 class='compact' data-bind='text: $data.name'></h4>
+                  <p data-bind='text: $data.description'></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GAMES -->
+      <section class='games'>
+        <div class='container'>
+          <h2 class='heading'><i data-bind='attr : { class : vm_data().heading_icons["games"] }'>&nbsp;&nbsp;</i><span data-bind='text:  vm_data().heading_titles["games"]'></span></h2>
+
+          <div data-bind='foreach: vm_data().games'>
+            <div class='clickable' data-bind='click: function () { window.location.hash = "#!/" + $data.key; }'>
+              <div class='game'>
+                <!--
+                    <div class='label-group' class='u-pull-center' data-bind='foreach: $data.platforms'>
+                        <span class='label other' data-bind='text: $data'></span>
+                    </div>
+                  -->
+                <div class='row'>
+                  <div class='three columns'>
+                    <img class='u-full-width' data-bind='attr: { src: "/res/" + $data.key + "/logo_sx.png"}'>
+
+                  </div>
+                  <div class='six columns'>
+                    <h4 class='compact' data-bind='text: $data.title'></h4>
+                    <!--
+                    <div class='label-group' class='u-pull-center' data-bind='foreach: $data.technologies'>
+                        <span class='label info' data-bind='text: $data'></span>
+                    </div>
+                  -->
+                    <p data-bind='text: $data.info[0]'></p>
+                  </div>
+                  <div class='three columns'>
+                    <img class='u-full-width' data-bind='attr: { src: "/res/" + $data.key + "/thumbnail.jpg" }'>
+                  </div>
+                </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class='about'>
+        <div class='container'>
+          <div class="row">
+            <div class="three columns">
+              <img class='avatar' data-bind='attr: { src: vm_data().about.avatar }'>
+            </div>
+            <div class="nine columns">
+              <h2 class='heading'><i data-bind='attr : { class : vm_data().heading_icons["about"] }'>&nbsp;&nbsp;</i><span data-bind='text:  vm_data().heading_titles["about"]'></span></h2>
+              <div data-bind='foreach: vm_data().about.text'>
+                <p data-bind='text: $data'></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+
+    <!-- SUB PAGE: DEMO -->
+    <div data-bind='if: vm_is_demo_key (vm_current_page())'>
+      <section class='page'>
+        <div class='container'>
+          <a  data-bind='attr: { href: "https://github.com/" + vm_get_demo (vm_current_page()).link }'>This page was generated from my associated Github repository, click here to visit the source directly.</a>
+          <br/>
+          <br/>
+          <div data-bind="template: { name: 'demo-page-template', data: vm_current_page_data(), afterRender: vm_pretty_print() }"></div>
+          <div id="disqus_thread"></div>
+        </div>
+      </section>
+    </div>
+  
+
+    <!-- SUB PAGE: GAME -->
+    <div data-bind='if: vm_is_game_key (vm_current_page())'>
+        <div data-bind="template: { name: 'game-page-template', data: vm_current_page_data(), afterRender:vm_update_gamepage }"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <section class='footer'>
+      <div class='container' style='display: none' data-bind='if: vm_data().social, visible: true'>
+        <div class='u-pull-right'>
+          <ul class='social', data-bind='foreach: vm_data().social'>
+            <li data-bind="style: { 'background': 'url(/res/social/button_' + $data.key + '.png) no-repeat center center', 'background-color': $data.colour }">
+              <a data-bind='text: $data.name, attr: { href: $data.link,  target: "_top" }'></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- DEMO PAGE -->
+  <script type="text/html" id="demo-page-template">
+    <div data-bind='html: $data'></div>
+  </script>
+
+
+  <!-- GAME PAGE -->
+  <script type="text/html" id="game-page-template">
+
+    <!-- GAME PAGE HEADER -->
+    <section class='gamepage-header'>
+      <div class='container'>
+        <!-- LOGO -->
+        <img data-bind='attr: { src: "/res/" + $data.key + "/logo_mx.png"}'>
+        <!-- TAGLINE -->
+        <div class='tagline'>
+          <i class='heading' data-bind='text: $data.subtitle'></i>
+        </div>
+        <!-- STUDIOS -->
+        <div class='studios'>
+          <div data-bind='foreach: $data.studio'>
+            <div class='inline-block'>
+              <img data-bind='attr: { src: "/res/studios/" + $root.vm_data().studios[$data].id + ".png", alt:  $root.vm_data().studios[$data].name }'>
+            </div>
+          </div>
+        </div>
+        <!-- PLATFORMS -->
+        <div class='platforms' data-bind='foreach: $data.platforms'>
+            <span class='label other' data-bind='css: { clickable : $data.link }, text: $root.vm_data().platforms[$data.key].name, click: function () { if ($data.link) { location.href = $data.link; } }'></span>
+        </div>
+      </div>
+
+    </section>
+    <!-- GAME PAGE INFO -->
+    <section class='gamepage-info'>
+      <div class='container'>
+        <h2 class='heading'><i class='fi-marker'>&nbsp;&nbsp;</i><span data-bind='text:  $data.location + " (" + $data.date + ")"'></span></h2>
+        <div class='row'>
+          <!-- RIGHT COLUMN -->
+          <div class='six columns' id='project_columns'>
+            <!-- DEVELOPMENT -->
+            <div class='gamepage-info-element'>
+              <div data-bind='foreach: _.filter ($data.development, function (x) { return x.enabled; })'>
+                <img class='u-full-width' data-bind='attr: { src: "/res/dev/" + $data.id + ".jpg", alt: $data.alt }'>
+              </div>
+            </div>
+          </div>
+          <!-- LEFT COLUMN -->
+          <div class='six columns' id='project_columns'>
+
+            <!-- DEV INFO -->
+            <div class='gamepage-info-element'>
+              <div class='u-pull-center' data-bind='foreach: $data.info'>
+                  <i class='heading' data-bind='text: $data'></i><br/>
+              </div>
+            </div>
+            <!-- TECH INFO -->
+            <div class='gamepage-info-element'>
+              <div class='u-pull-center' data-bind='foreach: $data.technologies'>
+                  <span class='label other' data-bind='text: $data'></span>
+              </div>
+            </div>
+            <!-- LINKS -->
+            <div data-bind='if: Object.keys($data.links).length > 0'>
+              <div class='gamepage-info-element'>
+                <ul data-bind='foreach: Object.keys($data.links)'>
+                  <li><a data-bind='text: $data, attr: { href: $parents[0].links[$data] }'></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- REVIEWS -->
+            <div data-bind='if: $data.reviews.length > 0'>
+              <div data-bind='foreach: _.filter ($data.reviews, function (x) { return x.enabled; })'>
+                <div class='gamepage-info-element'>
+                  <span><p class='u-pull-right' data-bind='text: ($data.score > 0) ? $data.score : ""'></p><h4 data-bind='text: $data.source'></h4></span>
+
+                  <i data-bind='text: "\"" +$data.quote + "\""'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAME PAGE TAGLINE -->
+    <!--
+    <section>
+      <div class='bannert' data-bind="style: { 'backgroundImage': 'url(/res/' + $root.vm_banner() + '/banner.jpg)' }">
+        <div class='container'>
+          <div class='gamepage-tagline'>
+            <i class='heading' data-bind='text: $data.subtitle'></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- GAME PAGE VIDEOS -->
+    <section data-bind='if: $data.videos' class='gamepage-videos'>
+      <div class='container'>
+        <h2 class='heading'><i class='fi-video'>&nbsp;&nbsp;</i><span>Videos</span></h2>
+        <div class="main-carousel" data-bind='foreach: Object.keys($data.videos)'>
+          <div class="carousel-cell">
+            <iframe width='640' height='400' data-bind='attr: { src: ($parents[0].videos[$data]).replaceAll ("watch\\?v=", "embed/") }'
+              allowfullscreen='allowfullscreen' mozallowfullscreen='mozallowfullscreen' msallowfullscreen='msallowfullscreen' oallowfullscreen='oallowfullscreen' webkitallowfullscreen='webkitallowfullscreen'></iframe>
+            <h2 class='gamepage-video-title' data-bind='text: $data'></h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMAGE VIEWER -->
+    <section data-bind='if: $root.vm_current_view_image()' class='gamepage-viewer'>
+      <div class='modal' data-bind='style: { top: document.documentElement.scrollTop }'>
+        <span class='close' data-bind='click: function (x) { $root.vm_current_view_image (null); enableScroll(); }'>&times;</span>
+        <img class='modal-content' data-bind='attr: { src: "/res/" + $root.vm_current_page() + "/gallery/" + $root.vm_current_view_image().id + ".jpg", alt: $root.vm_current_view_image().alt }'>
+        <div class='caption' data-bind='text: $root.vm_current_view_image().alt'></div>
+      </div>
+    </section>
+
+    <!-- GAME PAGE GALLERY -->
+    <section data-bind='if: $data.gallery' class='gamepage-gallery'>
+      <div class='container'>
+        <h2 class='heading'><i class='fi-camera'>&nbsp;&nbsp;</i><span>Gallery</span></h2>
+        <div id="images">
+        <div class="grid" data-bind='foreach: _.shuffle (_.filter($data.gallery, function (x) { return x.enabled; }))'>
+          <div class="grid-item" data-bind='style: { "width": $root.vm_image_gallery_column_width, "height": $data.height / $data.width * $root.vm_image_gallery_column_width, "margin-bottom": $root.vm_image_gallery_padding }'>
+            <img class='u-full-width clickable' data-bind='attr: { src: "/res/" + $parents[0].key + "/gallery/thumbnail/" + $data.id + ".jpg", alt: $data.alt }, click: function (x) { $root.vm_current_view_image (x);  disableScroll(); }'>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+  </script>
+
+  <script src='/contrib/js/jquery-3.4.1.min.js'></script>                                                               <!-- Must have. -->
+  <script src='/homepage.js'></script>                                                                                  <!-- Now boot. -->
+
+</body>
+</html>

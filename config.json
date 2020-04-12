@@ -1,0 +1,633 @@
+{
+  "title": "Ash Pook's homepage",
+  "description": "Ash Pook's homepage.",
+  "author": "Ash Pook",
+  "banner" : "splitsecond",
+  "micro_mode" : false,
+  "google_analytics":
+  {
+    "tracking_id": "UA-3875611-2"
+  },
+  "heading_titles" : {
+    "demos" : "Notepad",
+    "projects" : "Personal projects",
+    "games" : "Professional video games",
+    "about" : "About"
+  },
+  "heading_icons" : {
+    "demos" : "fi-pencil",
+    "projects" : "fi-book",
+    "games" : "fi-die-six",
+    "about" : "fi-torso"
+  },
+  "platforms": {
+    "ps3" : { "id" : "FPhba", "name": "PS3" },
+    "x360" : { "id" : "FPhba", "name": "Xbox 360" },
+    "pc" : { "id" : "FPhba", "name": "PC" },
+    "osx" : { "id" : "FPhba", "name": "OSX" },
+    "android" : { "id" : "FPhba", "name": "Android" },
+    "ios" : { "id" : "FPhba", "name": "iOS" },
+    "uwp" : { "id" : "FPhba", "name": "UWP" },
+    "fire" : { "id" : "FPhba", "name": "Fire OS" },
+    "tizen" : { "id" : "FPhba", "name": "Tizen OS" },
+    "html5" : { "id" : "jMVUO", "name": "HTML5" }
+  },
+  "studios": {
+    "king" : { "id": "KdirI", "name": "King" },
+    "mind_candy" : { "id": "cIYBD", "name": "Mind Candy" },
+    "boss_alien" : { "id": "CgHhb", "name": "Boss Alien Studio" },
+    "naturalmotion" : { "id": "fwzeR", "name": "NaturalMotion Games" },
+    "zynga" : { "id": "qGrBW", "name": "Zynga" },
+    "blackrock" : { "id": "ssndJ", "name": "Black Rock Studio" },
+    "disney" : { "id": "vunKa", "name": "Disney Interactive" }
+  },
+  "about" : {
+    "avatar" : "/res/about.png",
+    "text" : [
+      "Hi, my name is Ash, I build video games and this is my homepage; here you will find my portfolio of personal and professional software projects."
+    ]
+  },
+  "demos": [
+    {
+      "enabled": true,
+      "banner" : true,
+      "key" : "sdf",
+      "link": "sungiant/sdf",
+      "title" : "Sphere tracing signed distance functions",
+      "subtitle" : "Using functional programming to explore the basics of both the sphere tracing method of ray marching and constructive solid geometry modelling with signed distance functions.",
+      "date" : "January 2019"
+    },
+    {
+      "enabled": true,
+      "banner" : true,
+      "key" : "allrgb",
+      "link": "sungiant/allrgb",
+      "title" : "Solving allrgb.com's challenge",
+      "subtitle" : "Using Morton Codes and the Julia Set to create images with one pixel for every RGB colour; not one value missing, and not one value used more than once.",
+      "date" : "May 2014"
+    }
+  ],
+  "projects": [
+    {
+      "key": "fun",
+      "enabled": true,
+      "name": "Fun",
+      "description": "A C# functional programming library.",
+      "link": "http://github.com/sungiant/fun"
+    },
+    {
+      "key": "csbt",
+      "enabled": true,
+      "name": "CSBT",
+      "description": "A C# build tool.",
+      "link": "http://github.com/sungiant/csbt"
+    },
+    {
+      "key": "hayago",
+      "enabled": true,
+      "name": "Hayago",
+      "description": "A functional Go AI written in Scala.",
+      "link": "http://github.com/sungiant/hayago"
+    },
+    {
+      "key": "oats",
+      "enabled": true,
+      "name": "Oats",
+      "description": "A C# binary serialisation library.",
+      "link": "http://github.com/sungiant/oats"
+    },
+    {
+      "key": "zenith",
+      "enabled": true,
+      "name": "Zenith",
+      "description": "A functional Scala HTTP toolkit.",
+      "link": "http://github.com/sungiant/zenith"
+    },
+    {
+      "key": "abacus",
+      "enabled": true,
+      "name": "Abacus",
+      "description": "A C# cross precision 3D maths library.",
+      "link": "http://github.com/sungiant/abacus"
+    }
+  ],
+  "games": [
+    {
+      "enabled": true,
+      "key" : "ccfs",
+      "title" : "Candy Crush Friends Saga",
+      "subtitle" : "An all-new adventure from Tiffi, Yeti and their friends!",
+      "info" : ["I helped game teams to migrate the development of Candy Crush Friends from Stockholm to London."],
+      "gallery": [
+        { "id": "cWIei", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 569 },
+        { "id": "Dzbmn", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 569 },
+        { "id": "fAqWZ", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 568 },
+        { "id": "IuhGj", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 568 },
+        { "id": "jeRPO", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 567 },
+        { "id": "lkkcp", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 569 },
+        { "id": "MvKja", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 480 },
+        { "id": "mxnpf", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 568 },
+        { "id": "SqHKk", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 568 },
+        { "id": "TAZDx", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 568 },
+        { "id": "UOtHo", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 568 },
+        { "id": "VFymS", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 568 },
+        { "id": "zFDiu", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 568 },
+        { "id": "ziHVJ", "enabled": true, "alt": "Candy Crush Friends Saga", "width": 320, "height": 563 }
+      ],
+      "development" : [
+        { "id" : "lyDdU", "enabled" : true, "alt": "Kingfomarket 2019" }
+      ],
+      "date" : "2019 - 2020",
+      "platforms" : [
+        { "key": "ios", "link": "https://play.google.com/store/apps/details?id=com.king.candycrush4&gl=GB" },
+        { "key": "android", "link": "https://play.google.com/store/apps/details?id=com.midasplayer.apps.farmheroes4&hl=en_GB" },
+        { "key": "uwp", "link": null },
+        { "key": "fire", "link": null },
+        { "key": "tizen", "link": null }
+      ],
+      "genres" : ["match-3"],
+      "tags" : ["F2P"],
+      "technologies" : ["C++", "In-house engine", "OpenGL ES"],
+      "reviews" : [
+      ],
+      "awards" : [],
+      "links" : {
+        "Homepage": "https://king.com/game/candycrushfriends"
+      },
+      "videos" : {
+        "Release Trailer" : "https://www.youtube.com/watch?v=QGYJ25lN7eU",
+        "Jelly Queen (2020 Expansion)" : "https://www.youtube.com/watch?v=cDrnxqV4vDs",
+        "Gameplay" : "https://www.youtube.com/watch?v=J1IyUjc97f0"
+      },
+      "studio" : ["king"],
+      "location" : "London"
+    },
+    {
+      "enabled": true,
+      "key" : "fhc",
+      "title" : "Farm Heroes Champions",
+      "subtitle" : "Farm Heroes Champions; a fun, new puzzle adventure from the much-loved, popular franchise Farm Heroes, now with the option to play as a team!",
+      "info" : ["I helped the game's tech team navigate soft launch challenges and prepare for multiplayer at scale."],
+      "gallery": [
+        { "id": "GJQRT", "enabled": true, "alt": "Farm Heroes Champions", "width": 320, "height": 569 },
+        { "id": "HHxBD", "enabled": true, "alt": "Farm Heroes Champions", "width": 320, "height": 569 },
+        { "id": "kLyex", "enabled": true, "alt": "Farm Heroes Champions", "width": 320, "height": 569 },
+        { "id": "OiwhE", "enabled": true, "alt": "Farm Heroes Champions", "width": 320, "height": 569 },
+        { "id": "QkOCC", "enabled": true, "alt": "Farm Heroes Champions", "width": 320, "height": 569 },
+        { "id": "TNsjH", "enabled": false, "alt": "Farm Heroes Champions", "width": 320, "height": 427 },
+        { "id": "WlQea", "enabled": true, "alt": "Farm Heroes Champions", "width": 320, "height": 569 }
+      ],
+      "development" : [
+        { "id": "guZjv", "enabled" : true, "alt": "Escape room 2019" }
+      ],
+      "date" : "2018 - 2019",
+      "platforms" : [
+        { "key": "ios", "link": "https://apps.apple.com/gb/app/farm-heroes-champions/id1440510876" },
+        { "key": "android", "link": "https://play.google.com/store/apps/details?id=com.midasplayer.apps.farmheroes4&hl=en_GB" }
+      ],
+      "genres" : ["match-3"],
+      "tags" : ["F2P"],
+      "technologies" : ["C++", "In-house engine", "OpenGL ES"],
+      "reviews" : [
+      ],
+      "awards" : [],
+      "links" : {
+      },
+      "videos" : {
+        "Gameplay" : "https://www.youtube.com/watch?v=bqQWenkz-Cc",
+        "Levels 11-17" : "https://www.youtube.com/watch?v=IytuIlgtMno",
+        "Level 200" : "https://www.youtube.com/watch?v=QC4TpTKd8x0"
+      },
+      "studio" : ["king"],
+      "location" : "London"
+    },
+    {
+      "enabled": true,
+      "key" : "fhss",
+      "title" : "Farm Heroes Super Saga",
+      "subtitle" : "Progress through Farmtastic levels full of fruity fun while collecting as many Cropsies and Super Cropsies as you can.",
+      "info" : ["I led the game's tech team who worked to build and extend the game and also contribute to King's in-house game engine."],
+      "gallery": [
+        { "id": "AGkyP", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 171 },
+        { "id": "APBOU", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 150 },
+        { "id": "gamqx", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 240 },
+        { "id": "gJpDW", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 351 },
+        { "id": "gqRer", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 240 },
+        { "id": "JadMq", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 133 },
+        { "id": "jdOuM", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 350 },
+        { "id": "jxDTG", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 533 },
+        { "id": "kHtOZ", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 352 },
+        { "id": "NPeEn", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 240 },
+        { "id": "pbgUE", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 239 },
+        { "id": "USgLh", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 240 },
+        { "id": "WiKxA", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 180 },
+        { "id": "XcpdV", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 200 },
+        { "id": "YrLTr", "enabled": true, "alt": "Farm Heroes Super Saga", "width": 320, "height": 241 }
+      ],
+      "development" : [
+        { "id": "aSnhU", "enabled" : true, "alt": "Aifur 2018" }
+      ],
+      "date" : "2016 - 2019",
+      "platforms" : [
+        { "key": "ios", "link": "https://apps.apple.com/gb/app/farm-heroes-super-saga/id1058370552" },
+        { "key": "android", "link": "https://play.google.com/store/apps/details?id=com.king.farmheroessupersaga&gl=GB" },
+        { "key": "html5", "link": "https://apps.facebook.com/farmheroessupersaga/" },
+        { "key": "fire", "link": null }
+      ],
+      "genres" : ["match-3"],
+      "tags" : ["F2P"],
+      "technologies" : ["C++", "In-house engine", "Emscripten", "OpenGL ES"],
+      "reviews" : [
+      ],
+      "awards" : [],
+      "links" : {
+        "Homepage": "https://king.com/game/farmheroessupersaga"
+      },
+      "videos" : {
+        "New Game Promo" : "https://www.youtube.com/watch?v=2UVWt_BHXzw",
+        "Gameplay short" : "https://www.youtube.com/watch?v=re6NlZb7_50",
+        "TV Commercial" : "https://www.youtube.com/watch?v=GVEaEk_5ttQ",
+        "Super Plum Saves the Day" : "https://www.youtube.com/watch?v=pG18DU3UkEk"
+      },
+      "studio" : ["king"],
+      "location" : "London"
+    },
+    {
+      "enabled": true,
+      "key" : "fhs",
+      "title" : "Farm Heroes Saga",
+      "subtitle" : "Stop Rancid the Raccoon in this fun and fruity game and save Happy World Farm!",
+      "info" : ["I led a tech strike team building gameplay extensions and extensible C++ libraries."],
+      "gallery": [
+        { "id": "AgrRE", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 569 },
+        { "id": "BBatY", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 533 },
+        { "id": "byjiE", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 533 },
+        { "id": "eFqXL", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 1083 },
+        { "id": "jOYwg", "enabled": false, "alt": "Farm Heroes Saga", "width": 320, "height": 480 },
+        { "id": "LbfFL", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 533 },
+        { "id": "OfopP", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 533 },
+        { "id": "PHCti", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 569 },
+        { "id": "qiwNz", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 480 },
+        { "id": "rRFRB", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 533 },
+        { "id": "RTBAq", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 480 },
+        { "id": "wPCvC", "enabled": true, "alt": "Farm Heroes Saga", "width": 320, "height": 226 }
+      ],
+      "development" : [
+        { "id": "yOfHC", "enabled" : true, "alt": "Stockholm 2016" }
+      ],
+      "date" : "2016 - 2020",
+      "platforms" : [
+        { "key": "ios", "link": "https://apps.apple.com/gb/app/farm-heroes-saga/id608206510" },
+        { "key": "android", "link": "https://play.google.com/store/apps/details?id=com.king.farmheroessaga&gl=GB" },
+        { "key": "html5", "link": "https://apps.facebook.com/farmheroes/" },
+        { "key": "fire", "link": null }
+      ],
+      "genres" : ["match-3"],
+      "tags" : ["F2P"],
+      "technologies" : ["C++", "In-house engine", "Emscripten", "OpenGL ES"],
+      "reviews" : [
+      ],
+      "awards" : [],
+      "links" : {
+        "Homepage": "https://king.com/game/farmheroes"
+      },
+      "videos" : {
+        "Gameplay" : "https://www.youtube.com/watch?v=wc1vdopZal8",
+        "TV Commercial" : "https://www.youtube.com/watch?v=8SPtzuHlJEQ",
+        "Farm Club Commercial" : "https://www.youtube.com/watch?v=2gU0FABFmF4"
+      },
+      "studio" : ["king"],
+      "location" : "London"
+    },
+    {
+      "enabled": true,
+      "key" : "warriors",
+      "title" : "World Of Warriors",
+      "subtitle" : "Journey across the Wildlands and amass an army of history’s greatest warriors, from Romans and Vikings to Knights and Samurai.",
+      "info" : ["I joined the studio to help build the game's multiplayer infrastructure using functional programming with Scala on AWS."],
+      "gallery": [
+        { "id": "attlW", "enabled": false, "alt": "World Of Warriors", "width": 320, "height": 454 },
+        { "id": "enaEr", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 240 },
+        { "id": "FtlBo", "enabled": false, "alt": "World Of Warriors", "width": 320, "height": 454 },
+        { "id": "FUzMg", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 180 },
+        { "id": "GcJWa", "enabled": false, "alt": "World Of Warriors", "width": 320, "height": 454 },
+        { "id": "hDcAb", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 240 },
+        { "id": "IMqGa", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 180 },
+        { "id": "kauBk", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 240 },
+        { "id": "lTQvS", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 180 },
+        { "id": "noeHX", "enabled": false, "alt": "World Of Warriors", "width": 320, "height": 454 },
+        { "id": "nPnDe", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 180 },
+        { "id": "OgZdr", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 213 },
+        { "id": "oYCvp", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 180 },
+        { "id": "vlcaF", "enabled": false, "alt": "World Of Warriors", "width": 320, "height": 454 },
+        { "id": "xmJUJ", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 180 },
+        { "id": "yLqel", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 700 },
+        { "id": "zqjNm", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 240 },
+        { "id": "ZuUev", "enabled": true, "alt": "World Of Warriors", "width": 320, "height": 193 }
+      ],
+      "development" : [
+        { "id": "BzZVY", "enabled" : true, "alt": "Sausage Day 2015" }
+      ],
+      "date" : "2014 - 2015",
+      "platforms" : [
+        { "key": "ios", "link": null },
+        { "key": "android", "link": null }
+      ],
+      "genres" : ["fighting", "historical"],
+      "tags" : ["F2P"],
+      "technologies" : ["Scala", "C#", "Unity Engine", "AWS"],
+      "reviews" : [
+        {
+          "enabled" : true,
+          "source" : "Modojo",
+          "score" : 90,
+          "quote" : "World of Warriors is a unique RPG, that combines a bit of a fighting game feel with turn based combat."
+        },
+        {
+          "enabled" : true,
+          "source" : "Apple'N'Apps",
+          "score" : 70,
+          "quote" : "World of Warriors is an ornately crafted game of combat that offers entertaining action that is worth picking up."
+        },
+        {
+          "enabled" : true,
+          "source" : "148Apps",
+          "score" : 70,
+          "quote" : "World of Warriors looks gorgeous and has a 'gotta catch em all' vibe to it."
+        }
+      ],
+      "awards" : [],
+      "links" : {
+        "Homepage": "https://web.archive.org/web/20150418173600/http://mindcandy.com/products/WorldOfWarriors",
+        "Metacritic iOS [79]" : "https://www.metacritic.com/game/ios/world-of-warriors",
+        "Wikipedia" : "https://en.wikipedia.org/wiki/World_of_Warriors"
+      },
+      "videos" : {
+        "Official Trailer" : "https://www.youtube.com/watch?v=vjSTBVpalP0",
+        "Extended Trailer" : "https://www.youtube.com/watch?v=6eT5oi0TdAs",
+        "Official Music Video" : "https://www.youtube.com/watch?v=csySsDwSN_U",
+        "Spotlight: Kido" : "https://www.youtube.com/watch?v=1vQLOyc6hZQ",
+        "Spotlight: Gunnar" : "https://www.youtube.com/watch?v=DxVN0FSo3cQ",
+        "Spotlight: Kuro" : "https://www.youtube.com/watch?v=m4JBKi0Ucnw",
+        "Spotlight: Ten Bears" : "https://www.youtube.com/watch?v=E0FcNk-jXvc"
+      },
+      "studio" : ["mind_candy"],
+      "location" : "Brighton"
+    },
+    {
+      "enabled": true,
+      "key" : "classics",
+      "title" : "CSR Classics",
+      "subtitle" : "Race the greatest cars ever made, and restore them to their former glory!",
+      "info" : ["I led the studio's Network & Infrastructure team and designed and built a number of scalable services to run on AWS."],
+      "gallery": [
+        { "id": "EEvVG", "enabled": true, "alt": "CSR Classics", "width": 320, "height": 240 },
+        { "id": "ElJkO", "enabled": true, "alt": "CSR Classics", "width": 320, "height": 240 },
+        { "id": "HTnRI", "enabled": true, "alt": "CSR Classics", "width": 320, "height": 240 }
+      ],
+      "development" : [
+        { "id": "luJFY", "enabled" : true, "alt": "Christmas 2013" }
+      ],
+      "date" : "2012 - 2014",
+      "platforms" : [
+        { "key": "ios", "link": "https://itunes.apple.com/us/app/csr-classics/id598603610" },
+        { "key": "android", "link": "https://play.google.com/store/apps/details?id=com.naturalmotion.csrclassics&gl=GB" },
+        { "key": "osx", "link" : null },
+        { "key": "fire", "link" : null }
+      ],
+      "genres" : ["racing"],
+      "tags" : ["F2P"],
+      "technologies" : ["C#", "C++", "Objective C", "PHP", "Unity Engine", "AWS", "Mono"],
+      "reviews" : [
+        {
+          "enabled" : true,
+          "source" : "Gamezebo",
+          "score" : 80,
+          "quote" : "Classic is cool, and CSR Classics does a pretty nice job getting that point across. Rev it up and let’s race, daddy-o!"
+        },
+        {
+          "enabled" : true,
+          "source" : "Multiplayer.it",
+          "score" : 80,
+          "quote" : "CSR Classics delivers a spectacular, immediate and fun drag racing experience, with lots of races and cars."
+        }
+      ],
+      "awards" : [],
+      "links" : {
+      },
+      "videos" : {
+        "Official Trailer" : "https://www.youtube.com/watch?v=w6E2pjSsU1s",
+        "Official Trailer #2" : "https://www.youtube.com/watch?v=h-KP1RgofjE",
+        "Hotrods Trailer" : "https://www.youtube.com/watch?v=Pt3DbPCcKFU"
+      },
+      "studio" : ["boss_alien", "naturalmotion", "zynga"],
+      "location" : "Brighton"
+    },
+    {
+      "enabled": true,
+      "key" : "csr",
+      "title" : "CSR Racing",
+      "subtitle" : "Race your dream car in the ultimate test: a drag race along deserted city streets.",
+      "info" : ["I worked as a generalist engineer in studio and then later focused on scalable Networking & Infrastructure."],
+      "gallery": [
+        { "id": "ALTpT", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "cubYm", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "EFxpk", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "fEmes", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "FGBNB", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "FZIJE", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "GdCSx", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "HlmIX", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 427 },
+        { "id": "IDTfB", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "kEPKV", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "lDRRQ", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "MNFYy", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "OAYWc", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "oCCRV", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "oljVT", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "Ozize", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "pOFrH", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "qqAoq", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "raFDE", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "RNIvt", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "SgLEr", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "ssEWq", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "SVLOF", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "TqOAr", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "tSifd", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 240 },
+        { "id": "Udxas", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "vAssR", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 180 },
+        { "id": "WNLbu", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 200 },
+        { "id": "zGgbO", "enabled": true, "alt": "CSR Racing", "width": 320, "height": 175 }
+      ],
+      "development" : [
+        { "id": "noZAg", "enabled" : true, "alt": "Brighton Beach 2012" }
+      ],
+      "date" : "2011 - 2014",
+      "platforms" : [
+        { "key": "ios", "link": "https://itunes.apple.com/us/app/csr-racing/id469369175" },
+        { "key": "android", "link": "https://play.google.com/store/apps/details?id=com.naturalmotion.csrracing&gl=GB" },
+        { "key": "osx", "link" : null },
+        { "key": "fire", "link" : null }
+      ],
+      "genres" : ["racing"],
+      "tags" : ["F2P"],
+      "technologies" : ["C#", "C++", "Objective C", "PHP", "Unity Engine", "AWS", "Mono"],
+      "reviews" : [
+        {
+          "enabled" : true,
+          "source" : "Gamezebo",
+          "score" : 80,
+          "quote" : " CSR Racing looks better than some games from the previous console generation."
+        },
+        {
+          "enabled" : true,
+          "source" : "Pocket Gamer UK",
+          "score" : 60,
+          "quote" : "An accessible and fun racing game that places you in the driver's seat as you build, customize, and race cars on the streets."
+        }
+      ],
+      "awards" : [],
+      "links" : {
+        "Wikipedia" : "https://en.wikipedia.org/wiki/CSR_Racing",
+        "Games that defined 2012" : "https://www.gamasutra.com/view/feature/183891/the_50_games_that_defined_2012.php"
+      },
+      "videos" : {
+        "Launch Trailer" : "https://www.youtube.com/watch?v=iVgMbxhiRNw",
+        "Anniversary Trailer" : "https://www.youtube.com/watch?v=jLP5D8R-Qgg",
+        "World Tour Trailer" : "https://www.youtube.com/watch?v=ndAX0PO1V50"
+      },
+      "studio" : ["boss_alien", "naturalmotion"],
+      "location" : "Brighton"
+    },
+    {
+      "enabled": true,
+      "key" : "splitsecond",
+      "title" : "Split/Second",
+      "subtitle" : "Explosions, destruction, and then more explosions.",
+      "info" : ["I worked as a C++ software engineer in the studio's Network & Presentation team."],
+      "gallery": [
+        { "id": "vewDN", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "BMwhK", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "OJLbI", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "oVwlo", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "gKzbT", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "cmGzp", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "lfauY", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "mCWRU", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "ugGHt", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "xbHDs", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "AvMnx", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "HgUxN", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "ZkaYN", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "zfBrn", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "qKpzB", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "MkErd", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "jbgGT", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "YRkkg", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "uGiyO", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "LPRtG", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "keCSb", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "kIlLH", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "EBUcc", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "HPrOE", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "ObIdp", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "bEmgM", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "CfVed", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "rSjLL", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "QfniI", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 },
+        { "id": "ZgGYy", "enabled" : true, "alt": "Split/Second", "width": 320, "height": 180 }
+      ],
+      "development" : [
+        { "id": "DRqCx", "enabled" : true, "alt": "Studio 2010" },
+        { "id": "NOjXn", "enabled" : true, "alt": "Studio Film 2010" }
+
+      ],
+      "date" : "2008 - 2010",
+      "platforms" : [
+        { "key": "ps3", "link": "https://store.playstation.com/en-gb/product/EP1006-NPEB00506_00-SPLITDIGITALPALE" },
+        { "key": "x360", "link": "https://marketplace.xbox.com/en-us/Product/Split-Second/66acd000-77fe-1000-9115-d802425607e7" },
+        { "key": "pc", "link" : "https://store.steampowered.com/app/297860/SplitSecond/" }
+      ],
+      "genres" : ["racing"],
+      "tags" : ["Triple-A"],
+      "technologies" : ["C++", "XDK", "PS3 SDK", "In-house engine"],
+      "reviews" : [
+        {
+          "enabled" : true,
+          "source" : "IGN UK",
+          "score" : 87,
+          "quote" : "Split/Second is an explosive shot of distilled arcade energy; it's action that's fueled by the slick production of the Hollywood a-list, and racing that's infused with an infectious amount of fun."
+        },
+        {
+          "enabled" : true,
+          "source" : "Eurogamer",
+          "score" : 80,
+          "quote" : "Split/Second requires exactly the right combination of skill, memory and reflexes from you while maintaining a permanent high of tactile feedback, sensory assault and knife-edge excitement. If that's Black Rock's elevator pitch for a modern arcade racer: sold."
+        },
+        {
+          "enabled" : true,
+          "source" : "Joystiq",
+          "score" : 80,
+          "quote" : "More than any other racer that precedes it, Split/Second creates dramatic tension and cinematic thrills in every single race, and it almost always leaves you trembling after crossing the finish line."
+        },
+        {
+          "enabled" : true,
+          "source" : "Playstation Official Magazine UK",
+          "score" : 80,
+          "quote" : "Leaves the majority of its competitors languishing in its slipstream - with a glorious pile of fresh debris raining down around them."
+        },
+        {
+          "enabled" : false,
+          "source" : "1UP",
+          "score" : 100,
+          "quote" : "By expertly blurring the line between arcade racing and popcorn action flicks, Black Rock has not only further established itself as one of the top racing studios in the game, but also created arguably the most intense driving experience of this console generation."
+        }
+      ],
+      "awards" : [],
+      "links" : {
+        "Metacritic (PS3) [84]" : "https://www.metacritic.com/game/playstation-3/splitsecond",
+        "Metacritic (Xbox 360) [82]" : "https://www.metacritic.com/game/xbox-360/splitsecond",
+        "Metacritic (PC) [79]" : "https://www.metacritic.com/game/pc/splitsecond",
+        "Wikipedia" : "https://en.wikipedia.org/wiki/Split/Second"
+      },
+      "videos" : {
+        "E3 trailer" : "https://www.youtube.com/watch?v=WpnUzI04_1s",
+        "PS3 Gameplay" : "https://www.youtube.com/watch?v=IJTvialxf_8",
+        "4k PC Gameplay" : "https://www.youtube.com/watch?v=7vaQpWVIcOs"
+      },
+      "studio" : ["blackrock", "disney"],
+      "location" : "Brighton"
+    }
+  ],
+  "social": [
+    {
+      "enabled": true,
+      "key": "stack_overflow",
+      "name": "Stack Overflow",
+      "link": "http://stackoverflow.com/users/1167015/sungiant",
+      "colour": "#f69c55"
+    },
+    {
+      "enabled": true,
+      "key": "github",
+      "name": "Github",
+      "link": "http://github.com/sungiant",
+      "colour": "#555555"
+    },
+    {
+      "enabled": true,
+      "key": "linkedin",
+      "name": "LinkedIn",
+      "link": "http://uk.linkedin.com/in/ajpook",
+      "colour": "#006599"
+    },
+    {
+      "enabled": true,
+      "key": "email",
+      "name": "Email",
+      "link": "mailto:sungiant@live.co.uk?Subject=Hi%20Ash!",
+      "colour": "#e24b3a"
+    }
+  ]
+}
