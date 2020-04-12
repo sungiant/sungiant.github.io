@@ -236,7 +236,8 @@ function HomepageVM () {
         else {
           var mdx = md.replaceAll('\\$/', '/pages/' + page_key + '/');
           var lines = S(mdx).lines();
-          lines = _.filter (lines, function (x) { return ! S(x).startsWith ("[!["); });
+          lines = _.filter (lines, function (x) { return ! S(x).startsWith ("[![Build Status]("); });
+          lines = _.filter (lines, function (x) { return ! S(x).startsWith ("[![License]("); });
           lines = _.filter (lines, function (x) { return ! S(x).startsWith ("## License"); });
           lines = _.filter (lines, function (x) { return ! S(x).startsWith ("This software is"); });
           lines = _.filter (lines, function (x) { return ! S(x).startsWith ("Unless required by"); });
