@@ -284,7 +284,7 @@ function HomepageVM () {
       self.vm_author (data.author);
 
       console.log ('Registering GA.');
-      ga ('create', data.google_analytics.tracking_key, 'auto');
+      ga ('create', data.google_analytics.tracking_id, 'auto');
       ga ('send', 'pageview');
 
       console.log ('Initilizing routing.');
