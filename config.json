@@ -49,13 +49,58 @@
   },
   "demos": [
     {
+      "enabled": false,
+      "banner" : false,
+      "key" : "img2sky",
+      "link": "sungiant/img2sky",
+      "title" : "The backgrounds of Homeworld 2",
+      "subtitle" : "Exploring the tech behind the high fidelity skyboxes of Relic's Homeworld 2.",
+      "date" : "June 2020"
+    },
+    {
+      "enabled": true,
+      "banner" : false,
+      "key" : "vsdf",
+      "link": "sungiant/sge/tree/dev2/examples/ex03_staticsdf",
+      "title" : "Sphere tracing SDFs in real-time",
+      "subtitle" : "Rending signed distance functions in real-time on the GPU using SGE.",
+      "date" : "May 2020"
+    },
+    {
+      "enabled": true,
+      "banner" : false,
+      "key" : "vfractal",
+      "link": "sungiant/sge/tree/dev2/examples/ex02_juliaset",
+      "title" : "Rendering fractals in real-time.",
+      "subtitle" : "Exploring the Julia Set in real-time on the GPU using SGE.",
+      "date" : "May 2020"
+    },
+    {
+      "enabled": true,
+      "banner" : false,
+      "key" : "sge",
+      "link": "sungiant/sge",
+      "title" : "A simple graphics engine",
+      "subtitle" : "SGE is a simple Vulkan game/graphics engine for Windows and OSX that aims to make it simple to run and display real-time compute pipelines - think shader-toy on desktop.",
+      "date" : "April 2020"
+    },
+    {
       "enabled": true,
       "banner" : true,
       "key" : "sdf",
       "link": "sungiant/sdf",
       "title" : "Sphere tracing signed distance functions",
-      "subtitle" : "Using functional programming to explore the basics of both the sphere tracing method of ray marching and constructive solid geometry modelling with signed distance functions.",
+      "subtitle" : "Using functional programming  in Scala to explore the basics of both the sphere tracing method of ray marching and constructive solid geometry modelling with signed distance functions.",
       "date" : "January 2019"
+    },
+    {
+      "enabled": true,
+      "banner" : false,
+      "key" : "fern",
+      "link": "sungiant/fern",
+      "title" : "A simple virtual machine",
+      "subtitle" : "Running \"Hello world!\" in your very own virtual machine.",
+      "date" : "May 2014"
     },
     {
       "enabled": true,
@@ -64,7 +109,17 @@
       "link": "sungiant/allrgb",
       "title" : "Solving allrgb.com's challenge",
       "subtitle" : "Using Morton Codes and the Julia Set to create images with one pixel for every RGB colour; not one value missing, and not one value used more than once.",
-      "date" : "May 2014"
+      "date" : "March 2014"
+    },
+    {
+      "enabled": true,
+      "banner" : false,
+      "key" : "vigenere",
+      "link": "sungiant/vigenere",
+      "title" : "Cracking the Vigenère cipher",
+      "subtitle" : "For three centuries the Vigenère cipher resisted all attempts to break it; here's how it's done.",
+      "disqus" : true,
+      "date" : "February 2008"
     }
   ],
   "projects": [
