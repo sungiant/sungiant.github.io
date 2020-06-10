@@ -38,7 +38,7 @@
         <div class='container'>
           <h2 class='heading'><i data-bind='attr : { class : vm_data().heading_icons["demos"] }'>&nbsp;&nbsp;</i><span data-bind='text:  vm_data().heading_titles["demos"]'></span></h2>
           <div data-bind='foreach: vm_data().demos'>
-            <div class='clickable' data-bind='click: function () { if ($root.vm_data().micro_mode) { location.href = "https://github.com/" + $data.link; } else { window.location.hash = "#!/" + $data.key; } }'>
+            <div class='clickable' data-bind='click: function () { if ($root.vm_data().micro_mode || !$data.banner) { location.href = "https://github.com/" + $data.link; } else { window.location.hash = "#!/" + $data.key; } }'>
               <div class='row'>
                 <div class='three columns'>
                   <img class='u-full-width' data-bind='attr: { src: "/res/" + $data.key + "/thumbnail.jpg" }'>
@@ -150,7 +150,7 @@
         </div>
       </section>
     </div>
-  
+
 
     <!-- SUB PAGE: GAME -->
     <div data-bind='if: vm_is_game_key (vm_current_page())'>
@@ -163,7 +163,7 @@
         <div class='u-pull-right'>
           <ul class='social', data-bind='foreach: vm_data().social'>
             <li data-bind="style: { 'background': 'url(/res/social/button_' + $data.key + '.png) no-repeat center center', 'background-color': $data.colour }">
-              <a data-bind='text: $data.name, attr: { href: $data.link,  target: "_top" }'></a>
+              <a data-bind='text: $data.name, attr: { href: $data.link, target: "_top" }'></a>
             </li>
           </ul>
         </div>
