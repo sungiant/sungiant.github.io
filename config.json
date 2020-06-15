@@ -51,6 +51,24 @@
     {
       "enabled": false,
       "banner" : false,
+      "key" : "vcsg",
+      "link": "sungiant/sge/tree/dev2/examples/ex05_dynamicsdf",
+      "title" : "Dynamic CSG",
+      "subtitle" : "Evaluating dynamic constructive solid geometry trees in real-time on the GPU using Vulkan.",
+      "date" : "June 2020"
+    },
+    {
+      "enabled": true,
+      "banner" : false,
+      "key" : "mandlebulb",
+      "link": "sungiant/sge/tree/dev2/examples/ex04_mandlebulb",
+      "title" : "Real-time Mandlebulb",
+      "subtitle" : "Exploring the Mandlebulb fractal in real-time on the GPU using Vulkan.",
+      "date" : "June 2020"
+    },
+    {
+      "enabled": false,
+      "banner" : false,
       "key" : "img2sky",
       "link": "sungiant/img2sky",
       "title" : "The backgrounds of Homeworld 2",
@@ -63,7 +81,7 @@
       "key" : "vsdf",
       "link": "sungiant/sge/tree/dev2/examples/ex03_staticsdf",
       "title" : "Sphere tracing SDFs in real-time",
-      "subtitle" : "Rending signed distance functions in real-time on the GPU using SGE.",
+      "subtitle" : "Rending signed distance functions in real-time on the GPU using Vulkan.",
       "date" : "May 2020"
     },
     {
@@ -72,7 +90,7 @@
       "key" : "vfractal",
       "link": "sungiant/sge/tree/dev2/examples/ex02_juliaset",
       "title" : "Rendering fractals in real-time.",
-      "subtitle" : "Exploring the Julia Set in real-time on the GPU using SGE.",
+      "subtitle" : "Exploring the Julia Set in real-time on the GPU using Vulkan.",
       "date" : "May 2020"
     },
     {
