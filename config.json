@@ -62,7 +62,7 @@
       "banner" : false,
       "key" : "mandlebulb",
       "link": "sungiant/sge/tree/dev2/examples/ex04_mandlebulb",
-      "title" : "Real-time Mandlebulb",
+      "title" : "Mandlebulb",
       "subtitle" : "Exploring the Mandlebulb fractal in real-time on the GPU using Vulkan.",
       "date" : "June 2020"
     },
