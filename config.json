@@ -52,7 +52,7 @@
       "enabled": false,
       "banner" : false,
       "key" : "vcsg",
-      "link": "sungiant/sge/tree/dev2/examples/ex05_dynamicsdf",
+      "link": "sungiant/sge/tree/dev2/examples/ex05_csg",
       "title" : "Dynamic CSG",
       "subtitle" : "Evaluating dynamic constructive solid geometry trees in real-time on the GPU using Vulkan.",
       "date" : "June 2020"
@@ -79,7 +79,7 @@
       "enabled": true,
       "banner" : false,
       "key" : "vsdf",
-      "link": "sungiant/sge/tree/dev2/examples/ex03_staticsdf",
+      "link": "sungiant/sge/tree/dev2/examples/ex03_raymarching",
       "title" : "Sphere tracing SDFs in real-time",
       "subtitle" : "Rending signed distance functions in real-time on the GPU using Vulkan.",
       "date" : "May 2020"
